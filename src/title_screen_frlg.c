@@ -118,9 +118,12 @@ const u16 gTitleScreen_Slash_Pal[] = INCGFX_U16("graphics/title_screen_frlg/fire
 #endif
 
 #ifdef LEAFGREEN
-const u16 gGraphics_TitleScreen_GameTitleLogoPals[] = INCGFX_U16("graphics/title_screen_frlg/leafgreen/game_title_logo.pal", ".gbapal");
-const u8 gGraphics_TitleScreen_GameTitleLogoTiles[] = INCGFX_U8("graphics/title_screen_frlg/leafgreen/game_title_logo.png", ".8bpp.smol");
-const u8 gGraphics_TitleScreen_GameTitleLogoMap[] = INCBIN_U8("graphics/title_screen_frlg/leafgreen/game_title_logo.bin.smolTM");
+//const u16 gGraphics_TitleScreen_GameTitleLogoPals[] = INCGFX_U16("graphics/title_screen_frlg/leafgreen/game_title_logo.pal", ".gbapal");
+//const u8 gGraphics_TitleScreen_GameTitleLogoTiles[] = INCGFX_U8("graphics/title_screen_frlg/leafgreen/game_title_logo.png", ".8bpp.smol");
+//const u8 gGraphics_TitleScreen_GameTitleLogoMap[] = INCBIN_U8("graphics/title_screen_frlg/leafgreen/game_title_logo.bin.smolTM");
+const u16 gGraphics_TitleScreen_GameTitleLogoPals[] = INCGFX_U16("graphics/title_screen_frlg/leafgreen/my_attempt.pal", ".gbapal");
+const u8 gGraphics_TitleScreen_GameTitleLogoTiles[] = INCGFX_U8("graphics/title_screen_frlg/leafgreen/my_attempt.png", ".8bpp.smol");
+const u8 gGraphics_TitleScreen_GameTitleLogoMap[] = INCBIN_U8("graphics/title_screen_frlg/leafgreen/my_attempt.bin.smolTM");
 //const u16 gGraphics_TitleScreen_BoxArtMonPals[] = INCGFX_U16("graphics/title_screen_frlg/leafgreen/box_art_mon.pal", ".gbapal");
 //const u8 gGraphics_TitleScreen_BoxArtMonTiles[] = INCGFX_U8("graphics/title_screen_frlg/leafgreen/box_art_mon.png", ".4bpp.smol");
 //const u8 gGraphics_TitleScreen_BoxArtMonMap[] = INCBIN_U8("graphics/title_screen_frlg/leafgreen/box_art_mon.bin.smolTM");
