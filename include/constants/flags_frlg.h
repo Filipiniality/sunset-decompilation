@@ -12,9 +12,9 @@
 #define FLAG_0x027               0x027
 
 // Hide/show flags
-#define FLAG_HIDE_BULBASAUR_BALL                           0x028
-#define FLAG_HIDE_SQUIRTLE_BALL                            0x029
-#define FLAG_HIDE_CHARMANDER_BALL                          0x02A
+#define FLAG_HIDE_BULBASAUR_BALL                           0x028    // 
+#define FLAG_HIDE_SQUIRTLE_BALL                            0x029    // 
+#define FLAG_HIDE_CHARMANDER_BALL                          0x02A    // 
 #define FLAG_HIDE_OAK_IN_HIS_LAB                           0x02B
 #define FLAG_HIDE_OAK_IN_PALLET_TOWN                       0x02C
 #define FLAG_HIDE_RIVAL_IN_LAB                             0x02D
@@ -1002,7 +1002,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE25_ELIXIR                                    (FLAG_HIDDEN_ITEMS_START +   4)
 #define FLAG_HIDDEN_ITEM_ROUTE25_ETHER                                     (FLAG_HIDDEN_ITEMS_START +   5)
 #define FLAG_HIDDEN_ITEM_ROUTE9_ETHER                                      (FLAG_HIDDEN_ITEMS_START +   6)
-#define FLAG_HIDDEN_ITEM_UNUSED_0x07                                       (FLAG_HIDDEN_ITEMS_START +   7)
+#define FLAG_HIDDEN_ITEM_PALLET_TOWN_DUSK_STONE                            (FLAG_HIDDEN_ITEMS_START +   7)  // Dusk Stone in Pallet
 #define FLAG_HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_HYPER_POTION                  (FLAG_HIDDEN_ITEMS_START +   8)
 #define FLAG_HIDDEN_ITEM_ROUTE10_SUPER_POTION                              (FLAG_HIDDEN_ITEMS_START +   9)
 #define FLAG_HIDDEN_ITEM_ROUTE10_MAX_ETHER                                 (FLAG_HIDDEN_ITEMS_START +  10)

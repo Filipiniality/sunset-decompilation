@@ -275,8 +275,17 @@ PalletTown_Movement_OakEnterRight::
 	walk_down
 	walk_down
 	walk_down
-	walk_down
-	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_diag_northeast
 	walk_right
 	walk_right
 	walk_right
@@ -287,6 +296,7 @@ PalletTown_Movement_OakWalkToLabLeft::
 	walk_down
 	walk_to_lab
 	walk_right
+	walk_up
 	walk_in_place_faster_up
 	step_end
 
@@ -295,6 +305,7 @@ PalletTown_Movement_OakWalkToLabRight::
 	walk_left
 	walk_to_lab
 	walk_right
+	walk_up
 	walk_in_place_faster_up
 	step_end
 
@@ -461,9 +472,9 @@ PalletTown_Text_OakGrassUnsafeNeedMon::
 	.string "Here, come with me!$"
 
 PalletTown_Text_RaisingMonsToo::
-	.string "I'm raising POKéMON, too.\p"
-	.string "When they get strong, they can\n"
-	.string "protect me.$"
+	.string "I heard Team Rocket tried to make\n"
+	.string "a new Pokémon using special DNA!\p"
+	.string "That can't be true, right?$"
 
 PalletTown_Text_CanStoreItemsAndMonsInPC::
 	.string "Technology is incredible!\p"
@@ -530,7 +541,7 @@ PalletTown_Text_ReadItReadIt::
 @ Used by sign
 PalletTown_Text_PressStartToOpenMenu::
 	.string "TRAINER TIPS\p"
-	.string "Press START to open the MENU!$"
+	.string "There is a new rock by the water.$"
 
 PalletTown_Text_SignsAreUsefulArentThey::
 	.string "Signs are useful, aren't they?$"
@@ -543,6 +554,8 @@ PalletTown_Text_LookCopiedTrainerTipsSign::
 @ Used by NPC
 PalletTown_Text_PressStartToOpenMenuCopy::
 	.string "TRAINER TIPS!\p"
-	.string "Press START to open the MENU!$"
+	.string "There is a new rock by the water.\p"
+	.string "…\n"
+	.string "It's always been there!$"
 
 
