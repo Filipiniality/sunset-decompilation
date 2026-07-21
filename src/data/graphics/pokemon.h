@@ -21,7 +21,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #if P_FAMILY_BULBASAUR
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Bulbasaur[] = INCGFX_U32("graphics/pokemon/bulbasaur/anim_front.png", ".4bpp.smol");
-    const u16 gMonPalette_Bulbasaur[] = INCGFX_U16("graphics/pokemon/bulbasaur/normal.pal", ".gbapal");
+    const u16 gMonPalette_Bulbasaur[] = INCGFX_U16("graphics/pokemon/bulbasaur/normal_sunset.pal", ".gbapal");
     const u32 gMonBackPic_Bulbasaur[] = INCGFX_U32("graphics/pokemon/bulbasaur/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Bulbasaur[] = INCGFX_U16("graphics/pokemon/bulbasaur/shiny.pal", ".gbapal");
 #else
@@ -48,7 +48,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Ivysaur[] = INCGFX_U32("graphics/pokemon/ivysaur/anim_front.png", ".4bpp.smol");
-    const u16 gMonPalette_Ivysaur[] = INCGFX_U16("graphics/pokemon/ivysaur/normal.pal", ".gbapal");
+    const u16 gMonPalette_Ivysaur[] = INCGFX_U16("graphics/pokemon/ivysaur/anim_front.png", ".gbapal");
     const u32 gMonBackPic_Ivysaur[] = INCGFX_U32("graphics/pokemon/ivysaur/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Ivysaur[] = INCGFX_U16("graphics/pokemon/ivysaur/shiny.pal", ".gbapal");
 #else
@@ -75,7 +75,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Venusaur[] = INCGFX_U32("graphics/pokemon/venusaur/anim_front.png", ".4bpp.smol");
-    const u16 gMonPalette_Venusaur[] = INCGFX_U16("graphics/pokemon/venusaur/normal.pal", ".gbapal");
+    const u16 gMonPalette_Venusaur[] = INCGFX_U16("graphics/pokemon/venusaur/anim_front.png", ".gbapal");
     const u32 gMonBackPic_Venusaur[] = INCGFX_U32("graphics/pokemon/venusaur/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Venusaur[] = INCGFX_U16("graphics/pokemon/venusaur/shiny.pal", ".gbapal");
 #else
