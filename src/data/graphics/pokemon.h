@@ -836,7 +836,8 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #if P_FAMILY_EKANS
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Ekans[] = INCGFX_U32("graphics/pokemon/ekans/front_SDH.png", ".4bpp.smol");
-    const u16 gMonPalette_Ekans[] = INCGFX_U16("graphics/pokemon/ekans/normal_sunset.pal", ".gbapal");
+    const u16 gMonPalette_Ekans[] = INCGFX_U16("graphics/pokemon/ekans/front_SDH.png", ".gbapal");
+    //const u16 gMonPalette_Ekans[] = INCGFX_U16("graphics/pokemon/ekans/normal_sunset.pal", ".gbapal");
     const u32 gMonBackPic_Ekans[] = INCGFX_U32("graphics/pokemon/ekans/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Ekans[] = INCGFX_U16("graphics/pokemon/ekans/shiny.pal", ".gbapal");
 #else
@@ -892,8 +893,10 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Pichu[] = INCGFX_U32("graphics/pokemon/pichu/front_SDH.png", ".4bpp.smol");
-    const u16 gMonPalette_Pichu[] = INCGFX_U16("graphics/pokemon/pichu/normal.pal", ".gbapal");
+    const u32 gMonFrontPic_Pichu[] = INCGFX_U32("graphics/pokemon/pichu/anim_front_gba.png", ".4bpp.smol");
+    const u16 gMonPalette_Pichu[] = INCGFX_U16("graphics/pokemon/pichu/normal_gba.pal", ".gbapal");
+    //const u32 gMonFrontPic_Pichu[] = INCGFX_U32("graphics/pokemon/pichu/front_SDH.png", ".4bpp.smol");
+    //const u16 gMonPalette_Pichu[] = INCGFX_U16("graphics/pokemon/pichu/normal.pal", ".gbapal");
     const u32 gMonBackPic_Pichu[] = INCGFX_U32("graphics/pokemon/pichu/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Pichu[] = INCGFX_U16("graphics/pokemon/pichu/shiny.pal", ".gbapal");
 #else
@@ -5182,7 +5185,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #if P_GEN_2_CROSS_EVOS
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Smoochum[] = INCGFX_U32("graphics/pokemon/smoochum/front_SDH.png", ".4bpp.smol");
-    const u16 gMonPalette_Smoochum[] = INCGFX_U16("graphics/pokemon/smoochum/normal.pal", ".gbapal");
+    const u16 gMonPalette_Smoochum[] = INCGFX_U16("graphics/pokemon/smoochum/normal_sunset.pal", ".gbapal");
     const u32 gMonBackPic_Smoochum[] = INCGFX_U32("graphics/pokemon/smoochum/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Smoochum[] = INCGFX_U16("graphics/pokemon/smoochum/shiny.pal", ".gbapal");
 #else
@@ -8384,7 +8387,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 
 #if P_FAMILY_SNUBBULL
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Snubbull[] = INCGFX_U32("graphics/pokemon/snubbull/front_SDH.png", ".4bpp.smol");
+    const u32 gMonFrontPic_Snubbull[] = INCGFX_U32("graphics/pokemon/snubbull/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Snubbull[] = INCGFX_U16("graphics/pokemon/snubbull/normal_sunset.pal", ".gbapal");
     const u32 gMonBackPic_Snubbull[] = INCGFX_U32("graphics/pokemon/snubbull/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Snubbull[] = INCGFX_U16("graphics/pokemon/snubbull/shiny.pal", ".gbapal");
@@ -13292,8 +13295,9 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 
 #if P_FAMILY_SNORUNT
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Snorunt[] = INCGFX_U32("graphics/pokemon/snorunt/anim_front.png", ".4bpp.smol");
-    const u16 gMonPalette_Snorunt[] = INCGFX_U16("graphics/pokemon/snorunt/normal_sunset.pal", ".gbapal");
+    const u32 gMonFrontPic_Snorunt[] = INCGFX_U32("graphics/pokemon/snorunt/front_SDH.png", ".4bpp.smol");
+    const u16 gMonPalette_Snorunt[] = INCGFX_U16("graphics/pokemon/snorunt/front_SDH.png", ".gbapal");
+    //const u16 gMonPalette_Snorunt[] = INCGFX_U16("graphics/pokemon/snorunt/normal_sunset.pal", ".gbapal");
     const u32 gMonBackPic_Snorunt[] = INCGFX_U32("graphics/pokemon/snorunt/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Snorunt[] = INCGFX_U16("graphics/pokemon/snorunt/shiny.pal", ".gbapal");
 #else
