@@ -53,6 +53,10 @@ ViridianCity_Movement_TurnAround::
 	face_down
 	step_end
 
+ViridianCity_Movement_JumpDownLedge::
+	jump_2_down
+	step_end
+
 ViridianCity_EventScript_CitySign::
 	msgbox ViridianCity_Text_CitySign, MSGBOX_SIGN
 	end
@@ -101,6 +105,13 @@ ViridianCity_EventScript_TutorialOldMan::
 	goto_if_ge VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2, ViridianCity_EventScript_TutorialCompleted
 	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 1, ViridianCity_EventScript_TutorialStart
 	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_TutorialNotReady
+	end
+
+ViridianCity_EventScript_JustOldMan::
+	lock
+	faceplayer
+	msgbox ViridianCity_Text_PewterMuseumVisit
+	release
 	end
 
 ViridianCity_EventScript_AskIfTeachyTVHelpful::
@@ -167,6 +178,13 @@ ViridianCity_EventScript_Woman::
 	lock
 	faceplayer
 	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_WomanRoadBlocked
+	msgbox ViridianCity_Text_GoShoppingInPewterOccasionally
+	release
+	end
+
+ViridianCity_EventScript_JustWoman::
+	lock
+	faceplayer
 	msgbox ViridianCity_Text_GoShoppingInPewterOccasionally
 	release
 	end
@@ -269,6 +287,14 @@ ViridianCity_Text_GoShoppingInPewterOccasionally::
 	.string "occasionally.\p"
 	.string "I have to take the winding trail in\n"
 	.string "VIRIDIAN FOREST when I go.$"
+
+@ note to self this is replacement for tutorial
+ViridianCity_Text_PewterMuseumVisit::
+	.string "Sometimes I accompany my daughter\n"
+	.string "so I can visit the Pewter Museum.\p"
+	.string "Hm?\n"
+	.string "Are you waiting for me to say\n"
+	.string "something else?$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
 	.string "I absolutely forbid you from\n"
