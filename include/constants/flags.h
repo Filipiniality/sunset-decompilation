@@ -1663,9 +1663,9 @@
 
 // FRLG flags
 
-#define FLAG_HIDE_BULBASAUR_BALL                           0
-#define FLAG_HIDE_SQUIRTLE_BALL                            0
-#define FLAG_HIDE_CHARMANDER_BALL                          0
+#define FLAG_HIDE_CHIKORITA_BALL                           0
+#define FLAG_HIDE_TOTODILE_BALL                            0
+#define FLAG_HIDE_CYNDAQUIL_BALL                          0
 #define FLAG_HIDE_OAK_IN_HIS_LAB                           0
 #define FLAG_HIDE_OAK_IN_PALLET_TOWN                       0
 #define FLAG_HIDE_RIVAL_IN_LAB                             0
