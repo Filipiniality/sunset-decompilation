@@ -541,7 +541,7 @@ PalletTown_Text_ReadItReadIt::
 @ Used by sign
 PalletTown_Text_PressStartToOpenMenu::
 	.string "TRAINER TIPS\p"
-	.string "There is a new rock by the water.$"
+	.string "Press START to open the MENU!$"
 
 PalletTown_Text_SignsAreUsefulArentThey::
 	.string "Signs are useful, aren't they?$"
@@ -554,8 +554,6 @@ PalletTown_Text_LookCopiedTrainerTipsSign::
 @ Used by NPC
 PalletTown_Text_PressStartToOpenMenuCopy::
 	.string "TRAINER TIPS!\p"
-	.string "There is a new rock by the water.\p"
-	.string "…\n"
-	.string "It's always been there!$"
+	.string "Press START to open the MENU!$"
 
 
