@@ -174,6 +174,29 @@ ViridianCity_EventScript_YoungsterDeclineExplanation::
 	release
 	end
 
+ViridianCity_EventScript_BerryGirl::
+	lock
+	faceplayer
+	message ViridianCity_Text_BerryGirlIntro
+	waitmessage
+	goto ViridianCity_EventScript_BerryShop
+	end
+
+ViridianCity_EventScript_BerryShop::
+	pokemart ViridianCity_Items_BerryShop
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+	.align 2
+ViridianCity_Items_BerryShop::
+	.2byte ITEM_ORAN_BERRY
+	.2byte ITEM_PECHA_BERRY
+	.2byte ITEM_CHERI_BERRY
+	.2byte ITEM_NONE
+	release
+	end
+
 ViridianCity_EventScript_Woman::
 	lock
 	faceplayer
@@ -250,6 +273,10 @@ ViridianCity_EventScript_DoTutorialBattle::
 	msgbox ViridianCity_Text_WatchThatToLearnBasics
 	return
 
+ViridianCity_Text_BerryGirlIntro::
+	.string "Hi TRAINER! Want to buy\n"
+	.string "some berries?$"
+
 ViridianCity_Text_CanCarryMonsAnywhere::
 	.string "Those POKé BALLS at your waist!\n"
 	.string "You have POKéMON, don't you?\p"
@@ -291,9 +318,9 @@ ViridianCity_Text_GoShoppingInPewterOccasionally::
 @ note to self this is replacement for tutorial
 ViridianCity_Text_PewterMuseumVisit::
 	.string "Sometimes I accompany my daughter\n"
-	.string "so I can visit the Pewter Museum.\p"
+	.string "so I can visit the PEWTER MUSEUM.\p"
 	.string "Hm?\n"
-	.string "Are you waiting for me to say\n"
+	.string "Are you waiting for me to say\l"
 	.string "something else?$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
