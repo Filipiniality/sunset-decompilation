@@ -163,7 +163,7 @@ gPikachuIntro_Text_Page1::
 	.string "where the world has been plunged\n"
 	.string "into an eternal SUNSET after the\n"
 	.string "hybrid POKéMON MEWTWO escaped\n"
-	.string "from TEAM ROCKET's lab.$"
+	.string "from TEAM ROCKET'S lab.$"
 
 gPikachuIntro_Text_Page2::
 	.string "Despite this, the world continues on\n"
@@ -176,7 +176,6 @@ gPikachuIntro_Text_Page3::
 	.string "last remember. POKéMON and places have\n"
 	.string "changed. Adversaries have become\n"
 	.string "more powerful.\n"
-	.string "\n"
 	.string "KANTO is full of mystery and surprise.\n"
 	.string "Don't give up, TRAINER! The world of\n"
 	.string "SUNSET awaits!$"
