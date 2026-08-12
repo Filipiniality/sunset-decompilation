@@ -8386,7 +8386,7 @@ const u32 gMonBackPic_Snubbull[] = INCGFX_U32("graphics/pokemon/snubbull/back.pn
 const u16 gMonShinyPalette_Snubbull[] = INCGFX_U16("graphics/pokemon/snubbull/shiny.pal", ".gbapal");
 #else
 const u32 gMonFrontPic_Snubbull[] = INCGFX_U32("graphics/pokemon/snubbull/front_SDH.png", ".4bpp.smol");
-const u16 gMonPalette_Snubbull[] = INCGFX_U16("graphics/pokemon/snubbull/normal_sunset.pal", ".gbapal");
+const u16 gMonPalette_Snubbull[] = INCGFX_U16("graphics/pokemon/snubbull/front_SDH.png", ".gbapal");
 const u32 gMonBackPic_Snubbull[] = INCGFX_U32("graphics/pokemon/snubbull/back_gba.png", ".4bpp.smol");
 const u16 gMonShinyPalette_Snubbull[] = INCGFX_U16("graphics/pokemon/snubbull/shiny_gba.pal", ".gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
