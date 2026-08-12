@@ -6627,8 +6627,8 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Cyndaquil[] = INCGFX_U32("graphics/pokemon/cyndaquil/back_gba.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Cyndaquil[] = INCGFX_U16("graphics/pokemon/cyndaquil/shiny.pal", ".gbapal");
 #else
-    const u32 gMonFrontPic_Cyndaquil[] = INCGFX_U32("graphics/pokemon/cyndaquil/anim_front_gba.png", ".4bpp.smol");
-    const u16 gMonPalette_Cyndaquil[] = INCGFX_U16("graphics/pokemon/cyndaquil/normal_gba.pal", ".gbapal");
+    const u32 gMonFrontPic_Cyndaquil[] = INCGFX_U32("graphics/pokemon/cyndaquil/front_SDH.png", ".4bpp.smol");
+    const u16 gMonPalette_Cyndaquil[] = INCGFX_U16("graphics/pokemon/cyndaquil/normal_sunset.pal", ".gbapal");
     const u32 gMonBackPic_Cyndaquil[] = INCGFX_U32("graphics/pokemon/cyndaquil/back_gba.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Cyndaquil[] = INCGFX_U16("graphics/pokemon/cyndaquil/shiny_gba.pal", ".gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
