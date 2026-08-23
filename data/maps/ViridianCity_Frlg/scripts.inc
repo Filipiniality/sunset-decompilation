@@ -62,6 +62,10 @@ ViridianCity_EventScript_CitySign::
 	msgbox ViridianCity_Text_CitySign, MSGBOX_SIGN
 	end
 
+ViridianCity_EventScript_LawnSign::
+	msgbox ViridianCity_Text_LawnSign, MSGBOX_SIGN
+	end
+
 ViridianCity_EventScript_TrainerTips1::
 	msgbox ViridianCity_Text_CatchMonsForEasierBattles, MSGBOX_SIGN
 	end
@@ -390,6 +394,9 @@ ViridianCity_Text_TooBusyForTeachyTV::
 ViridianCity_Text_CitySign::
 	.string "VIRIDIAN CITY \n"
 	.string "The Eternally Green Paradise$"
+
+ViridianCity_Text_LawnSign::
+	.string "For sale: Contact GIO. CO."
 
 ViridianCity_Text_CatchMonsForEasierBattles::
 	.string "TRAINER TIPS\p"
