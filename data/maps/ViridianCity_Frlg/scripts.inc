@@ -50,7 +50,8 @@ ViridianCity_EventScript_GymDoorLocked::
 	end
 
 ViridianCity_Movement_TurnAround::
-	face_down
+	walk_down
+	walk_down
 	step_end
 
 ViridianCity_Movement_JumpDownLedge::
