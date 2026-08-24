@@ -159,6 +159,13 @@ static const u8 sGenericMulchDesc[]   = _("A fertilizer that\n"
                                           "is unsuitable for\n"
                                           "local soil.");
 
+//Start Pokevial Branch
+static const u8 sPokevialDesc[] = _(
+    "Restores all\n"
+    "POKéMON to full\n"
+    "health.");
+//End Pokevial Branch
+
 const struct ItemInfo gItemsInfo[] =
 {
     [ITEM_NONE] =
@@ -15832,6 +15839,21 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    //Start Pokevial Branch
+    [ITEM_POKEVIAL] =
+    {
+        .name = ITEM_NAME("POKéVIAL"),
+        //.itemId = ITEM_POKEVIAL,
+        .price = 0,
+        .description = sPokevialDesc,
+        .importance = 1,
+        //.registrability = TRUE,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Pokevial,
+    },
+    //End Pokevial Branch
 };
 
 #undef ITEM_NAME
