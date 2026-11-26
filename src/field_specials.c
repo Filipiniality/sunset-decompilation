@@ -42,6 +42,7 @@
 #include "random.h"
 #include "rayquaza_scene.h"
 #include "region_map.h"
+#include "region_map_frlg.h" // frlg map ui
 #include "rtc.h"
 #include "script.h"
 #include "script_menu.h"
@@ -1011,10 +1012,15 @@ static void CB2_FieldShowRegionMap(void)
     FieldInitRegionMap(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 }
 
+// frlg map ui
 void FieldShowRegionMap(void)
 {
-    SetMainCallback2(CB2_FieldShowRegionMap);
+    if (IS_FRLG)
+        InitRegionMapWithExitCB(REGIONMAP_TYPE_WALL, CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    else
+        SetMainCallback2(CB2_FieldShowRegionMap);
 }
+// frlg map ui
 
 static bool32 IsBuildingPCTile(u32 tileId)
 {

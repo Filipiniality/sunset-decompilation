@@ -38,6 +38,7 @@
 #include "party_menu.h"
 #include "pokeblock.h"
 #include "pokemon.h"
+#include "region_map_frlg.h" // frlg map ui
 #include "script.h"
 #include "sound.h"
 #include "strings.h"
@@ -1761,20 +1762,56 @@ static void ItemUseOnFieldCB_TownMap(u8 taskId)
     DestroyTask(taskId);
 }
 
+// frlg map ui
+static void UseTownMapFromBag(void)
+{
+    InitRegionMapWithExitCB(REGIONMAP_TYPE_NORMAL, CB2_BagMenuFromStartMenu);
+}
+
+static void Task_UseTownMapFromField(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        CleanupOverworldWindowsAndTilemaps();
+        InitRegionMapWithExitCB(REGIONMAP_TYPE_NORMAL, CB2_ReturnToField);
+        DestroyTask(taskId);
+    }
+}
+
+
 void ItemUseOutOfBattle_TownMap(u8 taskId)
 {
-    if (!gTasks[taskId].tUsingRegisteredKeyItem)
+    if (IS_FRLG)
     {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_TownMap;
-        gFieldCallback = FieldCB_UseItemOnField;
-        SetItemMenuCallback(CB2_ReturnToField);
-        CloseItemMenu(taskId);
+        if (!gTasks[taskId].tUsingRegisteredKeyItem)
+        {
+            gBagMenu->newScreenCallback = UseTownMapFromBag;
+            Task_FadeAndCloseBagMenu(taskId);
+        }
+        else
+        {
+            gFieldCallback = FieldCB_ReturnToFieldNoScript;
+            FadeScreen(FADE_TO_BLACK, 0);
+            gTasks[taskId].func = Task_UseTownMapFromField;
+        }
     }
     else
     {
-        gTasks[taskId].func = ItemUseOnFieldCB_TownMap;
+        if (!gTasks[taskId].tUsingRegisteredKeyItem)
+        {
+            sItemUseOnFieldCB = ItemUseOnFieldCB_TownMap;
+            gFieldCallback = FieldCB_UseItemOnField;
+            gBagMenu->newScreenCallback = CB2_ReturnToField;
+            Task_FadeAndCloseBagMenu(taskId);
+        }
+        else
+        {
+            gTasks[taskId].func = ItemUseOnFieldCB_TownMap;
+        }
     }
 }
+
+// frlg map ui
 
 static void InitBerryPouchFromBag(void)
 {

@@ -797,9 +797,9 @@ static const u8 sWinRegs[][2] = {
 static const u8 sTextColors[] = {TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY};
 
 #include "data/region_map/region_map_layout_kanto.h"
-#include "data/region_map/region_map_layout_sevii_123.h"
-#include "data/region_map/region_map_layout_sevii_45.h"
-#include "data/region_map/region_map_layout_sevii_67.h"
+#include "data/region_map/region_map_layout_sevii123.h"
+#include "data/region_map/region_map_layout_sevii45.h"
+#include "data/region_map/region_map_layout_sevii67.h"
 
 static const u8 sText_RegionMap_NoData[] = _("No data");
 static const u8 gText_RegionMap_Space[] = _(" ");
